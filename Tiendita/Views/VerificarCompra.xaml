@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tiendita.Views.VerificarCompra"
+             Title="Verificar Compra" BackgroundColor="Gray">
+    <VerticalStackLayout>
+        <ListView
+            x:Name="lstCompras"
+            ItemSelected="lstCompras_ItemSelected"
+            SeparatorVisibility="Default"
+            SelectionMode="Single"
+            SelectedItem="{Binding SelectedItem}"
+            BackgroundColor="Gray"
+            >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell
+                        >
+                        <StackLayout>
+                            <Label
+                                Text="{Binding Username}"
+                                TextColor="White">
+                            </Label>
+                            <Label
+                                Text="{Binding Precio, StringFormat='${0}'}"
+                                TextColor="White">
+                            </Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+        <Button
+            x:Name="Borrar"
+            Clicked="btnBorrar_Clicked"
+            BackgroundColor="Black"
+            TextColor="White"
+            Text="Borrar compra"
+            Margin="0,10,0,10"
+            >
+            
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

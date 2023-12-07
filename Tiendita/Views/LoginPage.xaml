@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tiendita.Views.LoginPage"
+             Title="Login">
+    <VerticalStackLayout Padding="50,20,50,20">
+        <Image Source="gokumazapan.jpg" HeightRequest="190" Aspect="AspectFit" Margin="0,0,0,50"></Image>
+        <Entry x:Name="txtUsuario" Placeholder="Usuario" Margin="0,0,0,25" BackgroundColor="LightBlue" TextColor="Black"></Entry>
+        <Entry x:Name="txtPassword" Placeholder="Password" Margin="0,0,0,25" BackgroundColor="LightBlue" TextColor="Black" IsPassword="True"></Entry>
+        <Button x:Name="btnLogin" Text="Ingresar" Margin="0,0,0,25" BackgroundColor="Transparent" BorderColor="LightSteelBlue" BorderWidth="2" TextColor="LightSteelBlue"
+            Clicked="btnLogin_Clicked"></Button>
+        <Button x:Name="btnRegistro" Text="Registro" Margin="0,0,0,25" BackgroundColor="Transparent" BorderColor="LightSteelBlue" 
+    BorderWidth="2" TextColor="LightSteelBlue" Clicked="btnRegistro_Clicked"></Button>
+        <Button x:Name="btnActualizar" Text="Cambiar contraseña" Margin="0,0,0,25" BackgroundColor="Transparent" BorderColor="LightSteelBlue" 
+    BorderWidth="2" TextColor="LightSteelBlue" Clicked="btnActualizar_Clicked"  ></Button>
+    </VerticalStackLayout>
+</ContentPage>
